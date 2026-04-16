@@ -64,17 +64,17 @@ export const guide = {
       phaseLabel: "Phase 2",
       title: "Budget planning",
       description:
-        "Bihar construction costs are often around Rs 1,200-1,800 per sq.ft for standard quality. But the final bill is usually more than the estimate, so build in a 20-25% buffer from day one.",
+        "Bihar construction costs are often quoted as a single Rs per sq.ft number, but that hides too much. Break the budget into structure, finishing, interiors, fees, and external works, then add a 20-25% buffer from day one.",
       items: [
         {
           tone: "info",
           title: "Typical cost breakup",
-          body: "Civil structure: about 45-50% | Finishes (tiles, paint, doors): about 25% | Electrical + plumbing: about 10-12% | Architect + approvals: about 5% | Miscellaneous contingency: about 15%"
+          body: "Civil structure: about 45-50% | Finishes (tiles, paint, doors): about 20-25% | Electrical + plumbing: about 10-12% | Architect + approvals: about 5% | External works, utilities, and contingency: the rest."
         },
         {
           tone: "warn",
           title: "Hidden costs to plan",
-          body: "Borewell, water tank, boundary wall, gate, septic tank, rainwater harvesting, landscaping, and transformer or meter deposit are all easy to forget.",
+          body: "Borewell, water tank, boundary wall, gate, septic tank, rainwater harvesting, landscaping, meter deposit, kitchen work, wardrobes, and lighting are all easy to forget.",
           tag: { tone: "warn", text: "Often forgotten" }
         },
         {
@@ -84,6 +84,12 @@ export const guide = {
           tag: { tone: "success", text: "Critical" }
         },
         {
+          tone: "warn",
+          title: "Do not compare raw Rs per sq.ft",
+          body: "A low quoted rate is meaningless unless scope is defined. Always ask what is excluded: approvals, consultant fees, waterproofing, compound wall, gates, tanks, electrical fixtures, and interiors.",
+          tag: { tone: "warn", text: "Scope first" }
+        },
+        {
           tone: "info",
           title: "When to build",
           body: "October to March is ideal across Bihar. Avoid starting foundation or slab work before monsoon. Rain delays curing and creates waterlogging on site."
@@ -91,13 +97,7 @@ export const guide = {
         {
           tone: "success",
           title: "Contract type options",
-          body: "Turnkey means the contractor handles everything. Material + labour means you buy materials and they build. Daily labour is cheapest but needs heavy supervision. For a first-time builder, turnkey or material + labour is safer."
-        },
-        {
-          tone: "warn",
-          title: "Sample cost (1000 sq.ft)",
-          body: "Expect roughly Rs 12-18 lakhs for standard construction in Bihar cities. This usually covers structure plus basic finishing.",
-          tag: { tone: "warn", text: "2024-25 estimate" }
+          body: "Turnkey means the contractor handles everything. Material + labour means you buy materials and they build. A mixed model often works best: let the contractor coordinate routine materials, but verify or directly buy major items where substitutions hurt later."
         }
       ]
     },
@@ -159,18 +159,18 @@ export const guide = {
       phaseLabel: "Phase 4",
       title: "Building your team",
       description:
-        "House construction is not just about materials. The team executing the work has an outsized impact on quality, cost, and schedule. Never hire without checking recent references.",
+        "House construction is not just about materials. The team executing the work has an outsized impact on quality, cost, and schedule. The safest sequence is usually architect first, engineer next, contractor after drawings and approvals are taking shape.",
       items: [
         {
           tone: "info",
           title: "Architect",
-          body: "Designs the house, prepares drawings for approval, and coordinates between civil and structural scopes. Fee is often around 3-5% of construction cost.",
+          body: "Designs the house, prepares drawings for approval, and coordinates between civil and structural scopes. Hire this role before the contractor starts shaping the plan informally on site.",
           tag: { tone: "info", text: "First hire" }
         },
         {
           tone: "info",
           title: "Structural engineer",
-          body: "Designs the foundation, columns, beams, and slabs. For multi-floor homes, this is part of the safety backbone of the building.",
+          body: "Designs the foundation, columns, beams, and slabs. If you may add another floor later, tell the engineer now because future expansion has to be designed into the structure from the start.",
           tag: { tone: "info", text: "Critical" }
         },
         {
@@ -186,13 +186,19 @@ export const guide = {
         },
         {
           tone: "warn",
+          title: "Material control",
+          body: "Do not blindly let one contractor or one supplier control all procurement. Take 2-3 quotes for major items, verify delivered quantity, and avoid bringing too much material to site too early.",
+          tag: { tone: "warn", text: "Reduce leakage" }
+        },
+        {
+          tone: "warn",
           title: "Questions to ask the contractor",
-          body: "Ask about defect liability period, whether concrete is ready-mix or site-mix, what work will be subcontracted, and whether milestone-based payments are acceptable."
+          body: "Ask about defect liability period, whether concrete is ready-mix or site-mix, what work will be subcontracted, how material wastage is tracked, and whether milestone-based payments are acceptable."
         },
         {
           tone: "warn",
           title: "Contract must-haves",
-          body: "Include material brand and grade specifications, a timeline with a penalty clause, a milestone payment schedule, and a defect warranty period.",
+          body: "Include material brand and grade specifications, a timeline with a penalty clause, a milestone payment schedule, delivery and wastage rules, and a defect warranty period.",
           tag: { tone: "warn", text: "Get it in writing" }
         }
       ]
@@ -203,7 +209,7 @@ export const guide = {
       phaseLabel: "Phase 5",
       title: "Soil testing & foundation",
       description:
-        "Your foundation is what keeps the house standing for decades. Soil testing is often skipped, but it is one of the highest-value checks you can buy before construction begins.",
+        "Your foundation is what keeps the house standing for decades. Soil testing is often skipped, but it is one of the highest-value checks you can buy before construction begins. In Bihar, this phase also has to respond to road level, drainage, and flood risk.",
       items: [
         {
           tone: "danger",
@@ -228,14 +234,14 @@ export const guide = {
         },
         {
           tone: "warn",
-          title: "Bihar-specific flooding risk",
-          body: "On flood-prone plots, plinth height should stay well above road level and the soil report should clearly account for groundwater depth.",
+          title: "Plinth height and road level",
+          body: "Do not set the finished floor casually. In many Bihar localities, owners regret keeping the house too close to road level. Keep the plinth safely above current road level and think about future road raising too.",
           tag: { tone: "warn", text: "Bihar-specific" }
         },
         {
           tone: "success",
           title: "Quality check at this stage",
-          body: "Inspect steel placement before the pour, check the concrete grade, and make sure curing happens long enough before loading the structure.",
+          body: "Inspect steel placement before the pour, check the concrete grade, confirm drainage direction around the plinth, and make sure curing happens long enough before loading the structure.",
           tag: { tone: "success", text: "Supervise closely" }
         }
       ]
@@ -251,7 +257,7 @@ export const guide = {
         {
           tone: "info",
           title: "The RCC frame",
-          body: "Columns carry loads vertically, beams tie the frame together, and slabs form floors and ceilings. Masonry usually fills the frame rather than carrying the main load."
+          body: "Columns carry loads vertically, beams tie the frame together, and slabs form floors and ceilings. Masonry usually fills the frame rather than carrying the main load, so do not let site improvisation alter the frame casually."
         },
         {
           tone: "danger",
@@ -262,7 +268,7 @@ export const guide = {
         {
           tone: "warn",
           title: "Steel quality",
-          body: "Use ISI-certified TMT bars from reputable dealers and verify the brand and markings before material is accepted on site.",
+          body: "Use ISI-certified TMT bars from reputable dealers and verify the brand and markings before material is accepted on site. If the contractor buys steel, you should still verify what was delivered.",
           tag: { tone: "warn", text: "Verify brand" }
         },
         {
@@ -273,13 +279,13 @@ export const guide = {
         },
         {
           tone: "info",
-          title: "Brick and masonry",
-          body: "Red clay bricks are common, but fly ash bricks and AAC blocks can perform better in several cases. Material choice should align with structural design and climate goals."
+          title: "Build for future floors only if planned now",
+          body: "If the family may go from single-floor to G+1 later, columns, footings, and reinforcement strategy must be designed for that now. Retrofitting that intent later is far costlier and riskier."
         },
         {
           tone: "info",
-          title: "Lintel beams",
-          body: "Provide lintels above openings so loads are properly distributed and cracks do not form above doors and windows over time."
+          title: "Brick and masonry",
+          body: "Red clay bricks are common, but fly ash bricks and AAC blocks can perform better in several cases. Material choice should align with structural design and climate goals."
         }
       ],
       documents: {
@@ -299,12 +305,12 @@ export const guide = {
       phaseLabel: "Phase 7",
       title: "Services: MEP, plumbing, electrical, waterproofing",
       description:
-        "Services go inside the walls and slabs before the surfaces are closed up. Changes after plastering and tiling are expensive, so coordination matters here.",
+        "Services go inside the walls and slabs before the surfaces are closed up. Changes after plastering and tiling are expensive, so coordination matters here. This phase is also where drainage, earthing, and waterproofing discipline quietly save years of frustration.",
       items: [
         {
           tone: "info",
           title: "Electrical planning",
-          body: "Plan every switch, socket, light, fan, AC point, CCTV point, and internet point before plastering. Use certified fire-resistant wiring."
+          body: "Plan every switch, socket, light, fan, AC point, CCTV point, and internet point before plastering. Use certified fire-resistant wiring and do not treat proper earthing as an optional extra."
         },
         {
           tone: "info",
@@ -314,7 +320,7 @@ export const guide = {
         {
           tone: "danger",
           title: "Waterproofing",
-          body: "Bathrooms, terraces, kitchens, and vulnerable external walls need proper waterproofing systems and written warranty coverage.",
+          body: "Bathrooms, terraces, kitchens, and vulnerable external walls need proper waterproofing systems and written warranty coverage. Exterior plaster and waterproofing should not be left behind while interiors race ahead.",
           tag: { tone: "danger", text: "Warranty item" }
         },
         {
@@ -326,7 +332,7 @@ export const guide = {
         {
           tone: "success",
           title: "Sewage & drainage",
-          body: "Where city sewer is not available, design the septic system properly and make sure external drainage moves water away from the foundation."
+          body: "Where city sewer is not available, design the septic system properly and make sure external drainage moves water away from the foundation. Poor site drainage is one of the most expensive 'small' mistakes owners discover later."
         },
         {
           tone: "success",
@@ -368,12 +374,12 @@ export const guide = {
         {
           tone: "success",
           title: "Grille & safety",
-          body: "Budget for grills, gates, boundary walls, and outdoor lighting early so these do not become late surprises."
+          body: "Budget for grills, gates, boundary walls, and outdoor lighting early so these do not become late surprises. Many owners wrongly discover these only after the main structure is finished."
         },
         {
           tone: "info",
-          title: "Electrical fixtures",
-          body: "Finalize DB setup, switchboards, light fixtures, fans, AC units, and safety devices such as MCBs and earth-leakage protection."
+          title: "Fixtures, kitchen, and wardrobes",
+          body: "Finalize DB setup, switchboards, light fixtures, fans, AC units, kitchen scope, wardrobes, and safety devices such as MCBs and earth-leakage protection. These frequently sit outside the contractor's base quote."
         }
       ]
     },
@@ -383,7 +389,7 @@ export const guide = {
       phaseLabel: "Phase 9",
       title: "Final checks & handover",
       description:
-        "Before accepting the house, do a full punch-list walk. Once you move in, getting defects corrected becomes much harder.",
+        "Before accepting the house, do a full punch-list walk. Once you move in, getting defects corrected becomes much harder, and the loose ends people ignore here usually become the longest arguments later.",
       items: [
         {
           tone: "info",
@@ -410,12 +416,12 @@ export const guide = {
         {
           tone: "success",
           title: "Documents to collect at the end",
-          body: "Collect as-built drawings, warranties, layout drawings, completion paperwork, and the contractor warranty letter."
+          body: "Collect as-built drawings, warranties, layout drawings, completion paperwork, the contractor warranty letter, and a final record of material brands and installed systems."
         },
         {
           tone: "info",
           title: "Snagging",
-          body: "Look for tile lippage, paint drips, poor alignment, loose fixtures, and finish defects. Photos help close arguments quickly."
+          body: "Look for tile lippage, paint drips, poor alignment, loose fixtures, finish defects, terrace drainage issues, and seepage signs. Photos help close arguments quickly."
         }
       ]
     },
@@ -448,6 +454,11 @@ export const guide = {
           tone: "warn",
           title: "Choosing the cheapest quote",
           body: "Low bids often hide thinner steel, weaker concrete, or lower-grade finishes. Compare quotes on an item-rate basis where possible."
+        },
+        {
+          tone: "warn",
+          title: "Buying too much material too early",
+          body: "Bulk deliveries feel efficient, but they often create wastage, theft, and supplier lock-in. Bring materials in planned batches tied to the actual work sequence."
         },
         {
           tone: "warn",
