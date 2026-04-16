@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>House Construction Framework for Bihar Cities</title>
+  <meta
+    name="description"
+    content="A phase-by-phase house construction guide for Bihar cities, covering land checks, approvals, budgeting, structure, services, finishing, and handover."
+  >
+  <meta name="theme-color" content="#f4efe7">
+  <meta property="og:title" content="House Construction Framework for Bihar Cities">
+  <meta
+    property="og:description"
+    content="A release-ready static guide for planning and supervising a house build in Bihar cities."
+  >
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script type="module" src="./scripts/app.js"></script>
+</head>
+<body>
+  <main class="guide-shell">
+    <header class="guide-intro">
+      <p class="guide-eyebrow" id="guide-eyebrow"></p>
+      <h1 class="guide-title" id="guide-title"></h1>
+      <p class="guide-summary" id="guide-summary"></p>
+    </header>
+
+    <div class="progress-bar" aria-label="Guide progress">
+      <div class="progress-fill" id="progress"></div>
+    </div>
+
+    <nav class="phase-nav" id="primary-nav" aria-label="Primary phases"></nav>
+    <nav class="phase-nav secondary-nav" id="secondary-nav" aria-label="Secondary phases"></nav>
+
+    <section id="phases" aria-live="polite"></section>
+  </main>
+</body>
+</html>
