@@ -139,9 +139,11 @@ function updateUrlForPhase(phaseId, mode = "replace") {
 }
 
 function setActivePhase(index, pushHash = false) {
-  const total = guide.phases.length;
+  const total = phasePanels.length;
   const safeIndex = Math.min(Math.max(index, 0), total - 1);
-  const activePhase = guide.phases[safeIndex];
+  const activePhase = safeIndex < guide.phases.length
+    ? guide.phases[safeIndex]
+    : { id: "glossary", navLabel: "Glossary" };
 
   phasePanels.forEach((panel, panelIndex) => {
     const isActive = panelIndex === safeIndex;
