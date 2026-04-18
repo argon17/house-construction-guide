@@ -372,6 +372,50 @@ body {
   flex-shrink: 0;
 }
 
+.glossary-group {
+  margin-bottom: 28px;
+}
+
+.glossary-group__label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--bg-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #7c6249;
+}
+
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.glossary-card {
+  padding: 16px 18px;
+  border: 1px solid rgba(110, 82, 55, 0.12);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(252, 247, 240, 0.98));
+  box-shadow: 0 6px 18px rgba(87, 59, 35, 0.05);
+}
+
+.glossary-card__term {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+.glossary-card__def {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;

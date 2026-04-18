@@ -484,5 +484,152 @@ export const guide = {
         }
       ]
     }
+  ],
+  glossary: [
+    {
+      term: "Amin (अमीन)",
+      category: "People",
+      definition: "A licensed government surveyor who physically measures land on the ground and prepares a sketch (naksha) with dimensions. In Bihar, demarcation by an amin is often the first step before construction or partition."
+    },
+    {
+      term: "Khesra / Khasra (खेसरा)",
+      category: "Identity",
+      definition: "The unique number assigned to an individual parcel of land within a mauza. Think of it as the plot number in Bihar revenue records."
+    },
+    {
+      term: "Khata (खाता)",
+      category: "Identity",
+      definition: "An account number that groups one or more khesras belonging to the same owner. Multiple plots can share a khata if they are owned by the same person."
+    },
+    {
+      term: "Mauza (मौजा)",
+      category: "Identity",
+      definition: "The smallest revenue unit — roughly equivalent to a village or locality. All land records (jamabandi, khata, khesra) are organised under a mauza."
+    },
+    {
+      term: "Touzi (तौजी)",
+      category: "Identity",
+      definition: "A register number used by the revenue department to identify a set of land records within a thana."
+    },
+    {
+      term: "Thana No. (थाना नं)",
+      category: "Identity",
+      definition: "The revenue thana number — a revenue administration boundary, not the police station."
+    },
+    {
+      term: "Chauhaddi (चौहद्दी)",
+      category: "Identity",
+      definition: "The four boundary descriptions of a plot — North, South, East, West — usually recording the names of neighbours or roads. Should be documented on the jamabandi."
+    },
+    {
+      term: "Jamabandi (जमाबंदी)",
+      category: "Document",
+      definition: "The primary land record register maintained by the revenue department. Records the owner's name, khata, khesra, area (rakba), and land tax (lagaan). Pull a fresh copy from the Bihar Bhumi portal as the first verification step."
+    },
+    {
+      term: "Encumbrance Certificate (EC)",
+      category: "Document",
+      definition: "A certificate from the sub-registrar's office listing all registered transactions (sales, mortgages, liens) on a property for a given period. Proves the plot is free of undisclosed claims. In Bihar, obtained in person at the local sub-registrar office."
+    },
+    {
+      term: "Sale Deed / Registry (रजिस्ट्री)",
+      category: "Document",
+      definition: "The legally registered document that transfers ownership from seller to buyer. Executed on non-judicial stamp paper and registered at the sub-registrar's office."
+    },
+    {
+      term: "Non-Judicial Stamp Paper",
+      category: "Document",
+      definition: "Pre-printed stamp paper issued by the state government used for legal agreements and deeds. The value (Rs. 500, Rs. 1000, etc.) represents the stamp duty paid. Sale deeds, affidavits, and agreements are written on these."
+    },
+    {
+      term: "Shapath Patra (शपथ पत्र)",
+      category: "Document",
+      definition: "A sworn affidavit — a written statement made under oath, signed before a notary or magistrate. Commonly used to support corrections or applications in land records."
+    },
+    {
+      term: "Panji-II / Panji Register",
+      category: "Document",
+      definition: "The digitized land register maintained by Bihar's revenue department. Online corrections to name, area, or other details are applied through the Perimarjan portal."
+    },
+    {
+      term: "Dakhil Kharij / Mutation (दाखिल खारिज)",
+      category: "Process",
+      definition: "The process of updating the jamabandi to reflect a change of ownership after a sale or inheritance. Without mutation, the new owner's name won't appear in revenue records even if the sale deed is registered."
+    },
+    {
+      term: "Perimarjan (परिमार्जन)",
+      category: "Process",
+      definition: "Bihar government's online portal for applying corrections to digitized land records (Panji-II). A Circle Officer reviews and recommends the correction before it propagates to the live jamabandi."
+    },
+    {
+      term: "Rakba (रकबा)",
+      category: "Measurement",
+      definition: "The recorded area of a plot in the revenue records. Expressed in acres, dismil, and hectares on the Bihar Bhumi portal."
+    },
+    {
+      term: "Dismil (डिसमिल)",
+      category: "Measurement",
+      definition: "A unit of land area commonly used in Bihar. 1 dismil = 1/100 acre ≈ 435.6 sq ft."
+    },
+    {
+      term: "Katha (कठा)",
+      category: "Measurement",
+      definition: "A traditional unit of area used in Bihar and eastern India. Not standardised — varies by district. In many urban Bihar areas, 1 katha ≈ 1,361 sq ft (20 dhur)."
+    },
+    {
+      term: "Dhur (धुर)",
+      category: "Measurement",
+      definition: "A smaller traditional unit. 20 dhur = 1 katha in most Bihar usage. Avoid relying on dhur or katha in official documents — use dismil or sq ft for precision."
+    },
+    {
+      term: "Lagaan (लगान)",
+      category: "Finance",
+      definition: "Annual land revenue (tax) payable to the government. Typically a small amount for residential plots in Bihar. Keep receipts as proof of continuous possession."
+    },
+    {
+      term: "BOQ (Bill of Quantities)",
+      category: "Finance",
+      definition: "A detailed list of all work items with quantities and unit rates. A BOQ-based contract is far safer than a lump-sum contract — it makes scope explicit and reduces substitution disputes."
+    },
+    {
+      term: "Anchal / Halka",
+      category: "Administration",
+      definition: "Revenue administration subdivisions. Anchal is a block-level unit; Halka is the smallest revenue circle within it."
+    },
+    {
+      term: "Nagar Parishad / Nagar Palika",
+      category: "Administration",
+      definition: "Municipal bodies governing towns and cities. Responsible for building permits, bye-laws (setbacks, FAR), and local property tax. Building plan approval must come from the relevant body before construction starts."
+    },
+    {
+      term: "FAR / FSI (Floor Area Ratio)",
+      category: "Building",
+      definition: "The ratio of total built-up floor area to plot area, set by the local authority. E.g. FAR 1.5 on a 1,000 sq ft plot allows a maximum of 1,500 sq ft across all floors. Determines how much you can build."
+    },
+    {
+      term: "Setback",
+      category: "Building",
+      definition: "Mandatory clear distance between the building edge and the plot boundary. Bye-laws specify minimum front, side, and rear setbacks. These constrain the usable floor plate, especially on narrow plots."
+    },
+    {
+      term: "Plinth Level",
+      category: "Building",
+      definition: "The height of the finished ground floor above the road or natural ground level. In flood-prone areas of Bihar, a higher plinth (typically 1–2 ft above road level minimum) is essential to prevent monsoon water ingress."
+    },
+    {
+      term: "SBC (Safe Bearing Capacity)",
+      category: "Building",
+      definition: "The maximum load per unit area that the soil can safely carry without excessive settlement. Determined by the soil test report. Used by the structural engineer to design the foundation type and dimensions."
+    },
+    {
+      term: "RCC (Reinforced Cement Concrete)",
+      category: "Building",
+      definition: "Concrete strengthened with steel reinforcement bars (TMT rebar). The standard structural system for columns, beams, and slabs in modern Indian residential construction."
+    },
+    {
+      term: "TMT Bars",
+      category: "Building",
+      definition: "Thermo-Mechanically Treated steel bars used as reinforcement in RCC. Grade Fe500D is standard for residential construction. Always verify brand and ISI markings on delivery."
+    }
   ]
 };

@@ -165,12 +165,61 @@ function setActivePhase(index, pushHash = false) {
 
 function getPhaseIndexFromHash() {
   const hash = window.location.hash.replace(/^#/, "");
+  if (hash === "glossary") return guide.phases.length;
   const index = guide.phases.findIndex((phase) => phase.id === hash);
-
   return index >= 0 ? index : 0;
 }
 
-renderGuide();
+function renderGlossary() {
+  const panel = createElement("article", "phase-content");
+  panel.id = "glossary";
+  panel.setAttribute("aria-labelledby", "glossary-button");
+  panel.append(
+    createElement("div", "phase-header"),
+  );
+  const header = panel.querySelector(".phase-header");
+  header.append(createElement("span", "phase-num", "Reference"));
+  header.append(createElement("h2", "phase-title", "Land & building glossary"));
+  panel.append(createElement("p", "phase-desc", "Plain-English explanations of terms that come up in Bihar land records, legal documents, and construction."));
+
+  const categories = [...new Set(guide.glossary.map((g) => g.category))];
+  categories.forEach((cat) => {
+    const group = createElement("div", "glossary-group");
+    group.append(createElement("span", "glossary-group__label", cat));
+    const grid = createElement("div", "glossary-grid");
+    guide.glossary.filter((g) => g.category === cat).forEach((g) => {
+      const card = createElement("div", "glossary-card");
+      card.append(createElement("div", "glossary-card__term", g.term));
+      card.append(createElement("p", "glossary-card__def", g.definition));
+      grid.append(card);
+    });
+    group.append(grid);
+    panel.append(group);
+  });
+
+  return panel;
+}
+
+function renderGuideWithGlossary() {
+  renderGuide();
+
+  const btn = createElement("button", "phase-btn", "Glossary");
+  btn.type = "button";
+  btn.id = "glossary-button";
+  btn.setAttribute("aria-controls", "glossary");
+  const glossaryIndex = guide.phases.length;
+  btn.dataset.index = String(glossaryIndex);
+  btn.addEventListener("click", () => setActivePhase(glossaryIndex, true));
+  secondaryNav.append(btn);
+
+  const panel = renderGlossary();
+  panel.dataset.index = String(glossaryIndex);
+  phasesRoot.append(panel);
+  phaseButtons.push(btn);
+  phasePanels.push(panel);
+}
+
+renderGuideWithGlossary();
 updateUrlForPhase(guide.phases[getPhaseIndexFromHash()].id, "replace");
 setActivePhase(getPhaseIndexFromHash(), false);
 
